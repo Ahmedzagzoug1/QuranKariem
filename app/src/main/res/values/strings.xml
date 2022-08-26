@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">القران الكريم</string>
+    <string name="title_activity_main"> عن التطبيق</string>
+    <string name="about">
+version : 1.0
+  </string>
+    <string name="about_end">By Ahmed Zagzoug </string>
+    <string name="title_activity_asbab_alnozol">اسباب النزول</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>

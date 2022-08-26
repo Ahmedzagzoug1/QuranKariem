@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zagzoug.qourankariem.QouranPager">
+    <item android:title="السور" android:id="@+id/index_soura"/>
+    <item android:title="الاجزاء" android:id="@+id/index_goza"/>
+    <item android:title="الصفحات" android:id="@+id/index_pages"/>
+
+    <item android:title="تفسير الصفحة" android:id="@+id/tafsir"/>
+
+
+    <item android:title="حفظ الصفحة" android:id="@+id/save_page"/>
+
+<item android:title="الصفحه المحفوظه"  android:id="@+id/page_saved"/>
+    <item android:title="دعاء ختم القران" android:id="@+id/end"  />
+
+    <item android:title="المنبه القرانى" android:id="@+id/alarm_menu"  />
+  <!--  <item android:title="أسباب النزول" android:id="@+id/asbab" />
+    <item android:title="بحث" android:id="@+id/search" />
+-->
+    <item android:title="عن البرنامج" android:id="@+id/about" />
+
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1023942267807",
+    "firebase_url": "https://qourankariem-91cbe.firebaseio.com",
+    "project_id": "qourankariem-91cbe",
+    "storage_bucket": "qourankariem-91cbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023942267807:android:cd2455e667653c63",
+        "android_client_info": {
+          "package_name": "com.zagzoug.qourankariem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023942267807-7t7kn915d2osc0qfvsc3lch883s67da4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zagzoug.qourankariem",
+            "certificate_hash": "b2ad0c98b14999312cf86fb76ac30abfcb71c71b"
+          }
+        },
+        {
+          "client_id": "1023942267807-q57ad77785mghnbec5g9ap9aln3d28s2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYy_kivBAfYmXlKSdYv7WSnldWgCL82_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023942267807-q57ad77785mghnbec5g9ap9aln3d28s2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

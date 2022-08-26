@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('testing-support-lib-0.1.jar'))
