@@ -3,6 +3,32 @@
 A native Android application built using **Java** that allows users to read and explore the Holy Quran with additional Islamic features such as Tafsir, Asbab Al-Nuzul, search functionality, and Quran alarm reminders.
 
 ---
+## لقطات من التطبيق (Screenshots)
+
+<table style="width:100%">
+  <tr>
+    <td align="center">
+      <img src="snapshots/quran.jpg" width="200px"/><br/>
+      <b>واجهة المصحف</b>
+    </td>
+    <td align="center">
+      <img src="snapshots/agza_page.jpg" width="200px"/><br/>
+      <b>فهرس الأجزاء</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="snapshots/tafsir.jpg" width="200px"/><br/>
+      <b>التفسير</b>
+    </td>
+    <td align="center">
+      <img src="snapshots/alarm_page.jpg" width="200px"/><br/>
+      <b>منبه الورد القرآني</b>
+    </td>
+  </tr>
+</table>
+
+---
 
 ## 📱 Features
 
