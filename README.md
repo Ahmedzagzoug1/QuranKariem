@@ -1,6 +1,6 @@
 # Quran Kareem Android App
 
-A native Android application built using **Java** that allows users to read and explore the Holy Quran with additional Islamic features such as Tafsir, Asbab Al-Nuzul, search functionality, and Quran alarm reminders.
+A native Android application built using **Java** that allows users to read and explore the Holy Quran with additional Islamic features such as Tafsir and Quran alarm reminders.
 
 ---
 ## لقطات من التطبيق (Screenshots)
