@@ -2,22 +2,21 @@
 
 buildscript {
     repositories {
-        jcenter()
-    }
+        google()
+        mavenCentral()    }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        // بما إننا اتفقنا هنستخدم نسخة متوافقة مع Gradle 7.5 أو 8.7
+        classpath 'com.android.tools.build:gradle:8.3.0'
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-       // classpath 'com.google.gms:google-services:3.0.0'
-        classpath 'com.google.gms:google-services:3.0.0'
+        // تحديث نسخة جوجل سيرفس عشان متضربش معاك
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
-    }
+        google()
+        mavenCentral()    }
 }
 
 task clean(type: Delete) {

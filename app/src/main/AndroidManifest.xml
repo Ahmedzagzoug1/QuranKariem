@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zagzoug.qourankariem">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -13,10 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".QouranPager"
-            android:screenOrientation="portrait"/>
+            android:exported="true" />
         <activity
             android:name=".IndexActivity"
-            android:parentActivityName=".QouranPager">
+            android:parentActivityName=".QouranPager"
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zagzoug.qourankariem.QouranPager" />
@@ -24,41 +24,51 @@
         <activity
             android:name=".AlarmActivity"
             android:label="المنبه القرانى"
-            android:parentActivityName=".QouranPager">
-            <meta-data
+            android:parentActivityName=".QouranPager"
+            android:exported="false">
+
+        <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zagzoug.qourankariem.QouranPager" />
         </activity>
 
-        <receiver android:name=".AlarmReciever" />
+        <receiver android:name=".AlarmReciever"
+            android:exported="false"/>
 
-        <activity android:name=".Tafsir" />
+        <activity android:name=".Tafsir"
+            android:exported="false"/>
+
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".End" />
+        <activity android:name=".End"
+            android:exported="false"/>
         <activity
             android:name=".About"
             android:label="@string/title_activity_main"
-            android:parentActivityName=".QouranPager">
+            android:parentActivityName=".QouranPager"
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zagzoug.qourankariem.QouranPager" />
         </activity>
         <activity
             android:name=".Searching"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="false"/>
         <activity
             android:name=".AsbabAlnozol"
             android:label="@string/title_activity_asbab_alnozol"
             android:parentActivityName=".QouranPager"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zagzoug.qourankariem.QouranPager" />

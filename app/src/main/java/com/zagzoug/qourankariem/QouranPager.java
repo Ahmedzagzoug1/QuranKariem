@@ -96,60 +96,57 @@ public class QouranPager extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
-        switch (item.getItemId()) {
+        int id = item.getItemId(); // بنعرف متغير للـ ID عشان نستخدمه في الـ if
 
-            case R.id.index_soura:
-                intent = new Intent(this, IndexActivity.class);
-                intent.putExtra(KEY_INDEX, INDEX_SOURA);
-                startActivity(intent);
-                break;
-            case R.id.index_pages:
-                intent = new Intent(this, IndexActivity.class);
-                intent.putExtra(KEY_INDEX, INDEX_PAGES);
-                startActivity(intent);
-                break;
-            case R.id.index_goza:
-                intent = new Intent(this, IndexActivity.class);
-                intent.putExtra(KEY_INDEX, INDEX_GOZA);
-                startActivity(intent);
-
-                break;
-            case R.id.save_page:
-                SharedPreferences sharedPreferences = getSharedPreferences(SHARED_FILE, MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putInt(KEY_SAVE, viewPager.getCurrentItem());
-                editor.apply();
-                Toast.makeText(this, "لقد تم حفظ الصفحه ", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.page_saved:
-                SharedPreferences shared = getSharedPreferences(SHARED_FILE, MODE_PRIVATE);
-
-                int pageSaved = shared.getInt(KEY_SAVE, -1);
-                if (pageSaved == -1) {
-                    Toast.makeText(this, "للاسف انت لم تحفظ اى صفحه", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(pageSaved);
-                }
-                break;
-            case R.id.tafsir:
-                intent = new Intent(this, Tafsir.class);
-                intent.putExtra(KEY_tafsir, 604 - viewPager.getCurrentItem());
-                startActivity(intent);
-                break;
-
-            case R.id.end:
-                intent = new Intent(this, End.class);
-                startActivity(intent);
-                break;
-            case R.id.alarm_menu:
-                intent = new Intent(this, AlarmActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.about:
-                intent = new Intent(this, About.class);
-                startActivity(intent);
-                break;
-          /*  case R.id.asbab:
+        if (id == R.id.index_soura) {
+            intent = new Intent(this, IndexActivity.class);
+            intent.putExtra(KEY_INDEX, INDEX_SOURA);
+            startActivity(intent);
+        }
+        else if (id == R.id.index_pages) {
+            intent = new Intent(this, IndexActivity.class);
+            intent.putExtra(KEY_INDEX, INDEX_PAGES);
+            startActivity(intent);
+        }
+        else if (id == R.id.index_goza) {
+            intent = new Intent(this, IndexActivity.class);
+            intent.putExtra(KEY_INDEX, INDEX_GOZA);
+            startActivity(intent);
+        }
+        else if (id == R.id.save_page) {
+            SharedPreferences sharedPreferences = getSharedPreferences(SHARED_FILE, MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putInt(KEY_SAVE, viewPager.getCurrentItem());
+            editor.apply();
+            Toast.makeText(this, "لقد تم حفظ الصفحه ", Toast.LENGTH_SHORT).show();
+        }
+        else if (id == R.id.page_saved) {
+            SharedPreferences shared = getSharedPreferences(SHARED_FILE, MODE_PRIVATE);
+            int pageSaved = shared.getInt(KEY_SAVE, -1);
+            if (pageSaved == -1) {
+                Toast.makeText(this, "للاسف انت لم تحفظ اى صفحه", Toast.LENGTH_SHORT).show();
+            } else {
+                viewPager.setCurrentItem(pageSaved);
+            }
+        }
+        else if (id == R.id.tafsir) {
+            intent = new Intent(this, Tafsir.class);
+            intent.putExtra(KEY_tafsir, 604 - viewPager.getCurrentItem());
+            startActivity(intent);
+        }
+        else if (id == R.id.end) {
+            intent = new Intent(this, End.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.alarm_menu) {
+            intent = new Intent(this, AlarmActivity.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.about) {
+            intent = new Intent(this, About.class);
+            startActivity(intent);
+        }
+        /*  case R.id.asbab:
                 intent = new Intent(this, AsbabAlnozol.class);
                 startActivity(intent);
                 break;
@@ -157,7 +154,9 @@ public class QouranPager extends AppCompatActivity {
                 intent = new Intent(this, Searching.class);
                 startActivity(intent);
                 break;*/
-        }
+            else
+                throw new IllegalStateException("Unexpected value: " + item.getItemId());
+
         return false;
     }
 
