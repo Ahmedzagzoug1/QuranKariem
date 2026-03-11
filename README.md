@@ -84,7 +84,15 @@ Structured Android activity-based architecture with multiple screens to separate
 - `SplashActivity` – App launch screen  
 
 ---
+## Tech Stack & Requirements:
+* **Language:** Java
+* **Minimum SDK:** Android 5.0 (API 21)
+* **Target SDK:** Android 34
+* **Gradle Version:** 8.7
+* **Android Gradle Plugin (AGP):** 8.3.0
+* **Libraries:** AndroidX, Firebase (Auth & Storage)
 
+---
 ## 🚀 How to Run
 
 1. Clone the repository:
